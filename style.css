@@ -1,0 +1,189 @@
+body{font-family: 'Inter', sans-serif;font-size: 16px;}
+
+a{text-decoration: none;}
+
+h1, h2, h3, h4, h5, p{color: #000; padding-bottom: 30px;}
+p{line-height: 28px; color: #666; font-weight: 300;}
+
+
+.big-text{font-size: 70px;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+.intro-text{text-transform: uppercase; font-size: 20px; font-weight: bold;}
+
+
+
+.button{padding: 18px 28px; background: #316bff; color:#fff; display: inline-block; border-radius: 4px;}
+
+@media(max-width: 40px){
+    .big-text{font-size: 40px;}
+}
+
+
+
+.header{
+    z-index: 10;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+    padding: 30px;
+    display: flex;
+    
+}
+
+.logo{
+    z-index: 1;
+    
+}
+
+.menu{
+    transition: all 1s cubic-bezier(.215, .61, .355, 1);
+    z-index: 0;
+    width: 100%;
+}
+
+.menu li{display:inline-block;}
+.menu li a{color: #fff; padding: 15px; display: block;}
+.menu li a{padding:15px 30px; font-size: 20px}
+
+.hamburger{display: none;}
+@media(max-width: 768px){
+    .cta{
+        display: none;
+       }
+    .menu{position: absolute; top:0; right:-100%; background: #000; height: 100vh; padding-top: 100px;}
+    .menu li{display: block;}
+
+    .menu--open{right: 0%;}
+
+    .hamburger{
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 40px;
+        right: 30px;
+    }
+    .hamburger span{background: #fff; height: 3px; width: 100%;display: block;margin-bottom: 5px; }
+}
+.hero{
+    background: linear-gradient(0deg, rgba(0,0,0,.8), rgba(0,0,0,0.1)), url('Benzina.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+    overflow: hidden;
+}   
+
+.hero__content{
+    z-index: 1;
+    position: relative;
+    width: 100%;
+    max-width: 1350px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+.hero__content h1,
+.hero__content p{color: #fff;}
+
+.poster{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+}
+
+.poster__img{width: 65%;height: 100%;}
+.poster__img{object-fit: cover; width: 100%; height: 100%;}
+.poster__content{width: 35%; padding: 50px;}
+
+
+@media (max-width: 768px){
+    .poster{flex-wrap: wrap; height: auto;}
+    .poster__img,
+    .poster__content{width: 100%;}
+}
+
+.bg-cover{ 
+    display: flex;
+    padding: 100px 0;
+    background: linear-gradient(0deg, rgba(0,0,0,.7), rgba(0,0,0,0.7)), url('America.jpg') no-repeat center center;
+    background-size: cover;
+    height: 100vh;
+    display: flex; width: 100%; align-items: center;
+}
+.big-cover__text{width: 50%;padding: 30px;}
+.bg-cover__title{width: 50%;padding:50px; display: flex;align-items: center;}
+
+@media(max-width: 768px){
+    .bg-cover{flex-wrap: wrap;height: auto;}
+    .big-cover__text,
+    .bg-cover__title{width: 100%;padding: 50px;display: flex;align-items: center;}
+}
+
+.grid{display: flex; max-width: 1350px;padding: 0 30px;margin: 0 auto;}
+.grid .col{width: 100%;}
+
+@media (max-width: 760px){
+    .grid{flex-wrap: wrap;}
+}
+
+.main-carousel{padding: 40px 0;}
+.carousel-cell{
+    height: 350px;
+    width: 350px;
+    margin-right: 40px;
+}
+
+.carousel-cell__content{
+    width: 100%;
+    height: 100%;
+    background: #6adf91;
+    border-radius: 100%;
+    line-height: 350px;
+    text-align: center;
+}
+
+
+
+.panel-blue{background: #4bb1e9;padding: 100px 30px;}
+.panel-blue__text{display: flex;align-items: center;}
+.dot{
+    height: 250px;
+    width: 250px;
+    background: #6adf91;
+    line-height: 250px;
+    border-radius: 100%;
+    display: inline-block;
+    text-align: center;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+.footer{
+    background: #010e30;
+    padding: 150px 0;
+}
+
+
+
+
+
+
+
+
+.mt-1{margin-top: 50px;}
+.mt-2{margin-top: 100px;}
+.mt-3{margin-top: 150px;}
+
+.tw{color:#fff}
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
