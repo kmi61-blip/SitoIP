@@ -119,6 +119,7 @@ p {
     padding: 20px 30px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: rgba(26, 26, 46, 0.95);
     backdrop-filter: blur(15px);
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
@@ -126,11 +127,14 @@ p {
 
 .logo {
     z-index: 1;
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
     display: block;
     height: auto;
+    vertical-align: middle;
 }
 
 nav {
@@ -583,6 +587,154 @@ nav {
 .partner-lottomatica {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     color: white;
+}
+
+/* Corrieri Section */
+.corrieri-section {
+    padding: 100px 30px;
+    background: linear-gradient(to bottom, #ffffff 0%, #f8f9fa 100%);
+}
+
+.corrieri-container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.corrieri-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.corrieri-header h2 {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-blue) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.corrieri-header p {
+    font-size: 18px;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.corrieri-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    margin-bottom: 80px;
+}
+
+.corriere-card {
+    background: white;
+    border-radius: 20px;
+    padding: 0;
+    transition: all 0.3s ease;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    aspect-ratio: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.corriere-card:hover {
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+}
+
+.corriere-logo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 800;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Colori specifici per corrieri */
+.corriere-poste {
+    background: linear-gradient(135deg, #FFD23F 0%, #F7931E 100%);
+}
+
+.corriere-sda {
+    background: linear-gradient(135deg, #E63946 0%, #A4161A 100%);
+}
+
+.corriere-ups {
+    background: linear-gradient(135deg, #6B4226 0%, #3D2314 100%);
+}
+
+.corriere-bartolini {
+    background: linear-gradient(135deg, #004E89 0%, #1A659E 100%);
+}
+
+.corriere-dhl {
+    background: linear-gradient(135deg, #FFCC00 0%, #D40511 50%, #FFCC00 100%);
+}
+
+.corrieri-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 40px;
+    margin-top: 60px;
+}
+
+.info-box {
+    text-align: center;
+    padding: 30px;
+    background: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.info-box:hover {
+    transform: translateY(-5px);
+}
+
+.info-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.info-box h3 {
+    color: var(--primary-color);
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.info-box p {
+    color: var(--text-light);
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .corrieri-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .corrieri-info {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .corriere-logo {
+        font-size: 20px;
+    }
 }
 
 /* Footer */
