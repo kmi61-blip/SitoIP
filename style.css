@@ -258,10 +258,42 @@ nav {
 }
 
 .hero-subtitle {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 400;
     opacity: 0.95;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
+    max-width: 800px;
+}
+
+.hero-buttons {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.button-primary {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+.button-secondary {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+}
+
+.button-secondary:hover {
+    background: rgba(255, 255, 255, 0.25);
+    border-color: rgba(255, 255, 255, 0.5);
+}
+
+.button-light {
+    background: white;
+    color: var(--primary-color);
+}
+
+.button-light:hover {
+    background: var(--accent-color);
+    color: var(--dark-bg);
 }
 
 @media (max-width: 768px) {
@@ -271,6 +303,100 @@ nav {
 
     .hero-subtitle {
         font-size: 16px;
+    }
+
+    .hero-buttons {
+        flex-direction: column;
+    }
+}
+
+/* Benzina Section */
+.benzina-section {
+    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--light-blue) 100%);
+    padding: 100px 30px;
+    position: relative;
+    overflow: hidden;
+}
+
+.benzina-section::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -10%;
+    width: 600px;
+    height: 600px;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+    border-radius: 50%;
+}
+
+.benzina-container {
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+.benzina-content {
+    position: relative;
+    z-index: 1;
+}
+
+.benzina-text h2 {
+    color: white;
+    margin-bottom: 10px;
+}
+
+.benzina-text .intro-text {
+    color: var(--accent-color);
+    margin-bottom: 50px;
+}
+
+.benzina-features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 40px;
+    margin-bottom: 50px;
+}
+
+.feature-item {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.feature-item:hover {
+    transform: translateY(-10px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--accent-color);
+}
+
+.feature-icon {
+    font-size: 60px;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.feature-item h3 {
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+}
+
+.feature-item p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 15px;
+    line-height: 1.6;
+    padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .benzina-features {
+        grid-template-columns: 1fr;
+        gap: 20px;
     }
 }
 
@@ -399,6 +525,87 @@ nav {
     }
 }
 
+/* Servizi Intro Section */
+.servizi-intro {
+    padding: 100px 30px;
+    background: white;
+}
+
+.servizi-intro-content {
+    max-width: 1350px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1.5fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.intro-left h2 {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+.intro-subtitle {
+    font-size: 24px;
+    color: var(--secondary-color);
+    font-weight: 600;
+    padding-bottom: 0;
+}
+
+.intro-description {
+    font-size: 18px;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    color: var(--text-dark);
+}
+
+.intro-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+}
+
+.stat-item {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.stat-number {
+    font-size: 48px;
+    font-weight: 900;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--purple) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    font-size: 14px;
+    color: var(--text-light);
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 968px) {
+    .servizi-intro-content {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .intro-stats {
+        grid-template-columns: 1fr;
+    }
+}
+
 /* Grid layout */
 .grid {
     display: flex;
@@ -482,6 +689,14 @@ nav {
 }
 
 /* Colori specifici per servizi */
+.service-benzina {
+    background: linear-gradient(135deg, #FF6B35 0%, #FF8C42 100%);
+}
+
+.service-lavaggio {
+    background: linear-gradient(135deg, #4ECDC4 0%, #44A08D 100%);
+}
+
 .service-deposito {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
 }
@@ -499,7 +714,7 @@ nav {
 }
 
 .service-dolci {
-    background: linear-gradient(135deg, #FF6B35 0%, #f35627 100%);
+    background: linear-gradient(135deg, #F7B731 0%, #F79F1F 100%);
 }
 
 .service-asia {
@@ -740,11 +955,45 @@ nav {
 /* Footer */
 .footer {
     background: linear-gradient(180deg, var(--dark-bg) 0%, #0d0d1e 100%);
-    padding: 80px 0 30px;
+    padding: 0 0 30px;
+    position: relative;
+}
+
+.footer-cta {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    padding: 80px 30px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.footer-cta::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="white" opacity="0.1"/></svg>');
+    background-size: 40px 40px;
+}
+
+.footer-cta h2 {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 15px;
+}
+
+.footer-cta p {
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    margin-bottom: 30px;
+    opacity: 0.95;
 }
 
 .footer .grid {
-    padding-top: 0;
+    padding-top: 80px;
     margin-bottom: 40px;
 }
 
@@ -754,24 +1003,85 @@ nav {
     padding-bottom: 20px;
 }
 
+.footer h4 {
+    color: white;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    padding-bottom: 10px;
+}
+
 .footer p {
     color: rgba(255, 255, 255, 0.8);
     font-size: 14px;
     line-height: 1.8;
 }
 
+.footer-logo {
+    margin-top: 30px;
+    opacity: 0.8;
+}
+
+.footer-logo img {
+    filter: brightness(0) invert(1);
+}
+
+.social-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.social-link {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0.9);
+    padding: 10px 15px;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    font-size: 15px;
+}
+
+.social-link:hover {
+    background: var(--primary-color);
+    transform: translateX(5px);
+}
+
+.newsletter {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
 .footer-bottom {
     text-align: center;
-    padding-top: 30px;
+    padding: 30px;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     max-width: 1350px;
     margin: 0 auto;
 }
 
 .footer-bottom p {
-    font-size: 13px;
+    font-size: 12px;
     opacity: 0.6;
     padding-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .footer .grid {
+        padding: 40px 30px;
+    }
+
+    .footer-cta h2 {
+        font-size: 36px;
+    }
+
+    .footer-cta p {
+        font-size: 16px;
+    }
 }
 
 
