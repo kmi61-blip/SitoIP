@@ -867,18 +867,15 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 24px;
-    font-weight: 800;
-    color: white;
     text-align: center;
-    padding: 20px;
+    padding: 30px;
+    background: white;
 }
 
 .corriere-logo img {
-    max-width: 70%;
-    max-height: 70%;
+    max-width: 80%;
+    max-height: 80%;
     object-fit: contain;
-    filter: brightness(0) invert(1);
 }
 
 .logo-text {
@@ -945,25 +942,13 @@ nav {
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
 }
 
-/* Colori specifici per corrieri */
-.corriere-poste {
-    background: linear-gradient(135deg, #003D7A 0%, #0055A5 100%);
-}
-
-.corriere-sda {
-    background: linear-gradient(135deg, #E30613 0%, #B20000 100%);
-}
-
-.corriere-ups {
-    background: linear-gradient(135deg, #351C15 0%, #4A2C1F 100%);
-}
-
-.corriere-bartolini {
-    background: linear-gradient(135deg, #0066B3 0%, #004C8C 100%);
-}
-
+/* Colori specifici per corrieri - Sfondo bianco per mostrare loghi a colori */
+.corriere-poste,
+.corriere-sda,
+.corriere-ups,
+.corriere-bartolini,
 .corriere-dhl {
-    background: linear-gradient(135deg, #FFCC00 0%, #FDD017 100%);
+    background: white;
 }
 
 .corrieri-info {
