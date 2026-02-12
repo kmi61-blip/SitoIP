@@ -1,179 +1,370 @@
 <!DOCTYPE html>
-<html lang="eng">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <meta name="description" content="Tabaccheria Santucci - Distributore benzina, autolavaggio, deposito pacchi, ricariche, carte Pokemon, Lotto e dolci dal mondo. Il tuo punto di riferimento completo!">
+    <meta name="keywords" content="tabaccheria santucci, distributore benzina, autolavaggio, lavaggio auto, deposito pacchi, ricariche telefoniche, carte pokemon, lotto, superenalotto, dolci americani, dolci asiatici, sisal, poste italiane">
+    <meta name="author" content="Tabaccheria Santucci">
 
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Tabaccheria Santucci - Benzina, Autolavaggio e Servizi Completi">
+    <meta property="og:description" content="Distributore benzina, autolavaggio, deposito pacchi, ricariche, carte Pokemon, Lotto e dolci dal mondo. Tutto quello che ti serve in un unico posto!">
+    <meta property="og:image" content="Logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Tabaccheria Santucci - Il Tuo Centro Servizi Completo">
+    <meta property="twitter:description" content="Benzina, autolavaggio, deposito pacchi, ricariche e molto altro. Scopri tutti i servizi della Tabaccheria Santucci!">
+
+    <title>Tabaccheria Santucci - Benzina, Autolavaggio, Deposito Pacchi e Servizi</title>
+
+    <!-- Preconnect to external resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com">
+    <link rel="preconnect" href="https://unpkg.com">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css" integrity="sha512-NmLkDIU1C/C88wi324HBc+S2kLhi08PN5GDeUVVVC/BVt/9Izdsc9SVeVfA1UZbY3sHUlDSyRXhCzHfr6hmPPw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.min.css" integrity="sha512-fJcFDOQo2+/Ke365m0NMCZt5uGYEWSxth3wg2i0dXu7A1jQfz9T4hdzz6nkzwmJdOdkcS8jmy2lWGaRXl+nFMQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;500;700;900&display=swap" rel="stylesheet"></noscript>
+
+    <!-- Defer non-critical scripts -->
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js" defer></script>
 </head>
 <body>
 
-    <div class="header">
+    <header class="header">
         <div class="logo">
-            <img src="Logo.png" alt="Logo" height="90" width="120">
+            <img src="Logo.png" alt="SitoIP Logo" height="90" width="120">
         </div>
-        <ul class="menu">
-            <li><a href="">Home </a></li>
-            <li><a href="">Maps </a></li>
-            <li><a href="">Contatti </a></li>
-        </ul>
+        <nav>
+            <ul class="menu" role="navigation" aria-label="Menu principale">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#servizi">Servizi</a></li>
+                <li><a href="#corrieri">Spedizioni</a></li>
+                <li><a href="#contatti">Contatti</a></li>
+            </ul>
+        </nav>
         <div class="cta">
-            <a href="" class="button">Contatti</a>
+            <a href="#contatti" class="button">Contatti</a>
         </div>
-        <div class="hamburger">
+        <button class="hamburger" aria-label="Apri menu" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
-        </div>
-    </div>
+        </button>
+    </header>
     
-<div class="hero">
+<section class="hero" id="home">
     <div class="hero__content reveal">
-        <p class="intro-text">Intro Text</p>
-        <h1 class="big-text">Titolo</h1>
-        <a href="" class="button">Discover</a>
+        <p class="intro-text">Benvenuti alla</p>
+        <h1 class="big-text">Tabaccheria<br/>Santucci</h1>
+        <p class="hero-subtitle">La tua tabaccheria di fiducia dal 2000. Distributore benzina, autolavaggio, deposito pacchi, ricariche, Lotto, Superenalotto e molto altro.</p>
+        <div class="hero-buttons">
+            <a href="#servizi" class="button button-primary">Scopri i Servizi</a>
+            <a href="#contatti" class="button button-secondary">Contattaci</a>
+        </div>
     </div>
-</div>
+</section>
 
-<div class="poster mt-3">
+<section class="benzina-section mt-3">
+    <div class="benzina-container">
+        <div class="benzina-content reveal">
+            <div class="benzina-text">
+                <h2 class="big-text">Distributore Benzina<br/>& Autolavaggio</h2>
+                <p class="intro-text" style="color: var(--primary-color);">Rifornimento e cura della tua auto</p>
+                <div class="benzina-features">
+                    <div class="feature-item">
+                        <div class="feature-icon">⛽</div>
+                        <h3>Carburanti di Qualità</h3>
+                        <p>Benzina e Diesel sempre ai migliori prezzi. Self-service e servito disponibili.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">🚗</div>
+                        <h3>Autolavaggio Automatico</h3>
+                        <p>Lavaggio completo, cerchi in lega, lucidatura e programmi personalizzati per ogni esigenza.</p>
+                    </div>
+                    <div class="feature-item">
+                        <div class="feature-icon">⚡</div>
+                        <h3>Servizio Rapido</h3>
+                        <p>Rifornimento veloce e autolavaggio in pochi minuti. Aperto tutti i giorni!</p>
+                    </div>
+                </div>
+                <a href="#contatti" class="button">Scopri gli orari</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="poster mt-3">
     <div class="poster__img reveal">
-        <img src="America.jpg" alt="Cibo" class="bg-cover">
+        <img src="America.jpg" alt="Dolci americani e asiatici" class="bg-cover" loading="lazy" width="1920" height="1080">
     </div>
     <div class="poster__content reveal">
-        <h3 class="big-text">Titolo del Poster</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laboriosam iure illum fugiat id ducimus! Est laboriosam similique praesentium provident voluptas, repudiandae a saepe perspiciatis adipisci rerum consectetur atque reprehenderit numquam.</p>
-        <a href="" class="button"> Call to action</a>
+        <h2 class="big-text">Dolci dal Mondo</h2>
+        <p>Scopri la nostra selezione esclusiva di dolci americani e asiatici. Dai classici snack USA alle delizie orientali più ricercate. Un viaggio di gusto che porta il mondo nella tua città!</p>
+        <p>Candy, cioccolato, bevande esotiche e tanto altro. Vieni a trovarci per scoprire tutte le novità!</p>
+        <a href="#contatti" class="button">Vieni a trovarci</a>
     </div>
-</div>
+</section>
 
 
-<div class="bg-cover mt-3">
+<section class="bg-cover mt-3" id="pokemon">
     <div class="bg-cover__title reveal">
-        <h3 class="big-text tw">Titolo del mio blocco cover</h3>
+        <h2 class="big-text tw">Carte Pokemon<br/>& Collezionismo</h2>
     </div>
     <div class="bg-cover__text reveal">
-        <h4  class="normal-text tw">Testo del mio paragrafo</h4>
-        <p class="tw">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit repudiandae enim quae amet libero deleniti labore neque magni ducimus optio quia quidem natus odio laudantium iste et, temporibus nobis necessitatibus.</p>
-    
-        <h4 class="normal-text tw">Testo del mio paragrafo</h4>
-        <p class="tw">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit repudiandae enim quae amet libero deleniti labore neque magni ducimus optio quia quidem natus odio laudantium iste et, temporibus nobis necessitatibus.</p>
+        <h3 class="normal-text tw">Bustine e Box Sigillati</h3>
+        <p class="tw">Trova le ultime uscite di carte Pokemon! Bustine singole, box da collezione e set esclusivi sempre disponibili. Aggiorniamo costantemente il nostro assortimento con le novità del mondo Pokemon.</p>
 
-        <h4 class="normal-text tw">Testo del mio paragrafo</h4>
-        <p class="tw">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sit repudiandae enim quae amet libero deleniti labore neque magni ducimus optio quia quidem natus odio laudantium iste et, temporibus nobis necessitatibus.</p>
+        <h3 class="normal-text tw">Carte Singole Rare</h3>
+        <p class="tw">Cerchi quella carta specifica per completare il tuo deck? Abbiamo una selezione di carte singole rare e ricercate. Chiedi al nostro staff per verificare la disponibilità!</p>
 
+        <h3 class="normal-text tw">Accessori per Collezionisti</h3>
+        <p class="tw">Proteggi e valorizza la tua collezione con custodie, album, deck box e sleeves di qualità. Tutto ciò che serve per conservare al meglio le tue carte più preziose.</p>
     </div>
-</div>
+</section>
 
-<div class="grid mt-3">
-    <div class="col reveal">
-        <h3 class="big-text">I nostri<br/>partner</h3>
-    </div>
-    <div class="col reveal">
-        <p class="mt-2">Offriamo numerosi servizi grazie alla collaborazione dei nostri partner</p>
-    </div>
-</div>
-
-<div class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }'>
-    <div class="carousel-cell">
-        <div class="carousel-cell__content zoom">
-            IP
-            <img src="IP.png">
+<section class="servizi-intro mt-3" id="servizi">
+    <div class="servizi-intro-content">
+        <div class="intro-left reveal">
+            <h2 class="big-text">Tutti i Servizi<br/>che ti Servono</h2>
+            <p class="intro-subtitle">Dalla A alla Z, in un unico posto</p>
         </div>
-    </div>
-    <div class="carousel-cell">
-        <div class="carousel-cell__content zoom">
-            Sisal
-        </div>
-    </div>
-    <div class="carousel-cell">
-        <div class="carousel-cell__content zoom">
-            Poste Italiane
-        </div>
-    </div>
-    <div class="carousel-cell">
-        <div class="carousel-cell__content zoom">
-            text
-        </div>
-    </div>
-    <div class="carousel-cell">
-        <div class="carousel-cell__content zoom">
-            text
-        </div>
-    </div>
-    <div class="carousel-cell">
-        <div class="carousel-cell__content">
-            text
-        </div>
-    </div>
-</div>
-
-<div class="panel-blue mt-3">
-
-<div class="grid">
-    <div class="col panel-blue__dots">
-        <div class="dot zoom">text</div>
-        <div class="dot zoom">text</div>
-        <div class="dot zoom">text</div>
-        <div class="dot zoom">text</div>
-    </div>
-    <div class="col">
-        <div class="grid">
-            <div class="col reveal">
-                <h3 class="big-text tw">Lorem ipsum</h3>
-            </div>
-            <div class="col reveal">
-                <p class="tw mt-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa assumenda molestiae esse aut ipsa dolorum sequi ut cum accusantium, iure quia soluta molestias, vero inventore voluptates unde, sint explicabo. Quidem!</p>
+        <div class="intro-right reveal">
+            <p class="intro-description">Alla Tabaccheria Santucci non trovi solo i servizi tradizionali di una tabaccheria. Abbiamo creato un vero e proprio centro servizi dove puoi rifornirti di carburante, lavare l'auto, ritirare pacchi, ricaricare il telefono, giocare al Lotto, acquistare carte Pokemon e scoprire dolci unici dal mondo!</p>
+            <div class="intro-stats">
+                <div class="stat-item">
+                    <div class="stat-number">10+</div>
+                    <div class="stat-label">Servizi Offerti</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">7/7</div>
+                    <div class="stat-label">Aperti Ogni Giorno</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">20+</div>
+                    <div class="stat-label">Anni di Esperienza</div>
+                </div>
             </div>
         </div>
     </div>
-</div>
-</div>
+</section>
 
-<footer class="footer"></footer>
+<section class="main-carousel" data-flickity='{ "cellAlign": "left", "contain": true }' aria-label="Carousel dei servizi">
+    <div class="carousel-cell">
+        <div class="carousel-cell__content zoom service-benzina">
+            <div class="service-icon">⛽</div>
+            <div class="service-name">Distributore<br/>Benzina</div>
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content zoom service-lavaggio">
+            <div class="service-icon">🚗</div>
+            <div class="service-name">Auto<br/>lavaggio</div>
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content zoom service-deposito">
+            <div class="service-icon">📦</div>
+            <div class="service-name">Deposito<br/>Pacchi</div>
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content zoom service-ricariche">
+            <div class="service-icon">📱</div>
+            <div class="service-name">Ricariche<br/>Telefoniche</div>
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content zoom service-pokemon">
+            <div class="service-icon">⚡</div>
+            <div class="service-name">Carte<br/>Pokemon</div>
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content zoom service-lotto">
+            <div class="service-icon">🎰</div>
+            <div class="service-name">Lotto &<br/>Lotterie</div>
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content zoom service-dolci">
+            <div class="service-icon">🍬</div>
+            <div class="service-name">Dolci<br/>Americani</div>
+        </div>
+    </div>
+    <div class="carousel-cell">
+        <div class="carousel-cell__content zoom service-asia">
+            <div class="service-icon">🍡</div>
+            <div class="service-name">Dolci<br/>Asiatici</div>
+        </div>
+    </div>
+</section>
 
-<div class="grid">
-    <div class="col">
-        <h4 class="normal-text tw">Lorem ipsum</h4>
-        <p>Lorme ispum dos aia sm</p>
+<section class="panel-blue mt-3" id="partner">
+    <div class="grid">
+        <div class="col panel-blue__dots">
+            <div class="dot zoom partner-ip">
+                <img src="IP.png" alt="Logo IP" loading="lazy">
+            </div>
+            <div class="dot zoom partner-sisal">Sisal</div>
+            <div class="dot zoom partner-poste">Poste<br/>Italiane</div>
+            <div class="dot zoom partner-lottomatica">Lottomatica</div>
+        </div>
+        <div class="col">
+            <div class="grid">
+                <div class="col reveal">
+                    <h2 class="big-text tw">Partner Ufficiali</h2>
+                </div>
+                <div class="col reveal">
+                    <p class="tw mt-2">Collaboriamo con i principali partner nazionali per offrirti servizi affidabili e sicuri. Deposito pacchi con InPost, giochi e ricariche con Sisal, servizi postali e pagamenti con Poste Italiane, e le migliori lotterie con Lottomatica.</p>
+                    <p class="tw">La nostra tabaccheria è il tuo punto di riferimento per tutti i servizi quotidiani!</p>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="col">
-        <h4 class="normal-text tw">Lorem ipsum</h4>
-        <p>Lorme ispum dos aia sm</p>
-    </div>
-    <div class="col">
-        <h4 class="normal-text tw">Lorem ipsum</h4>
-        <p>Lorme ispum dos aia sm</p>
-    </div>
-    <div class="col">
-        <h4 class="normal-text tw">Lorem ipsum</h4>
-        <p>Lorme ispum dos aia sm</p>
-    </div>
-</div>
+</section>
 
+<section class="corrieri-section mt-3" id="corrieri">
+    <div class="corrieri-container">
+        <div class="corrieri-header reveal">
+            <h2 class="big-text">Corrieri Convenzionati</h2>
+            <p>Spedisci e ritira i tuoi pacchi con i principali corrieri nazionali e internazionali</p>
+        </div>
+        <div class="corrieri-grid reveal">
+            <div class="corriere-card zoom">
+                <div class="corriere-logo corriere-poste">
+                    <!-- Per aggiungere il logo vero: <img src="loghi/poste.png" alt="Poste Italiane"> -->
+                    <div class="logo-text">
+                        <div class="logo-brand">POSTE</div>
+                        <div class="logo-sub">Italiane</div>
+                    </div>
+                </div>
+            </div>
+            <div class="corriere-card zoom">
+                <div class="corriere-logo corriere-sda">
+                    <!-- Per aggiungere il logo vero: <img src="loghi/sda.png" alt="SDA"> -->
+                    <div class="logo-text">
+                        <div class="logo-brand-sda">SDA</div>
+                        <div class="logo-sub-small">Express Courier</div>
+                    </div>
+                </div>
+            </div>
+            <div class="corriere-card zoom">
+                <div class="corriere-logo corriere-ups">
+                    <!-- Per aggiungere il logo vero: <img src="loghi/ups.png" alt="UPS"> -->
+                    <div class="logo-text">
+                        <div class="logo-brand-ups">UPS</div>
+                        <div class="logo-sub-small">United Parcel Service</div>
+                    </div>
+                </div>
+            </div>
+            <div class="corriere-card zoom">
+                <div class="corriere-logo corriere-bartolini">
+                    <!-- Per aggiungere il logo vero: <img src="loghi/bartolini.png" alt="Bartolini"> -->
+                    <div class="logo-text">
+                        <div class="logo-brand">BARTOLINI</div>
+                        <div class="logo-sub-small">Corriere Espresso</div>
+                    </div>
+                </div>
+            </div>
+            <div class="corriere-card zoom">
+                <div class="corriere-logo corriere-dhl">
+                    <!-- Per aggiungere il logo vero: <img src="loghi/dhl.png" alt="DHL"> -->
+                    <div class="logo-text">
+                        <div class="logo-brand-dhl">DHL</div>
+                        <div class="logo-sub-dhl">Express</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="corrieri-info reveal">
+            <div class="info-box">
+                <div class="info-icon">📮</div>
+                <h3>Spedizioni</h3>
+                <p>Spedisci in Italia e all'estero con tariffe competitive</p>
+            </div>
+            <div class="info-box">
+                <div class="info-icon">📪</div>
+                <h3>Ritiri</h3>
+                <p>Ritira i tuoi pacchi in orari comodi per te</p>
+            </div>
+            <div class="info-box">
+                <div class="info-icon">🔒</div>
+                <h3>Sicurezza</h3>
+                <p>Tracciamento completo e assistenza dedicata</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer" id="contatti">
+    <div class="footer-cta reveal">
+        <h2 class="big-text tw">Vieni a Trovarci!</h2>
+        <p class="tw">La Tabaccheria Santucci ti aspetta per offrirti il meglio dei servizi</p>
+        <a href="tel:+393331234567" class="button button-light">📞 Chiamaci Ora</a>
+    </div>
+
+    <div class="grid">
+        <div class="col">
+            <h3 class="normal-text tw">Tabaccheria Santucci</h3>
+            <p>Dal 2000 il tuo punto di riferimento per benzina, autolavaggio e servizi completi. Qualità, professionalità e cortesia ci contraddinguono da oltre 20 anni.</p>
+            <div class="footer-logo">
+                <img src="Logo.png" alt="Logo Tabaccheria Santucci" height="60" loading="lazy">
+            </div>
+        </div>
+        <div class="col">
+            <h3 class="normal-text tw">Servizi Principali</h3>
+            <p>⛽ Distributore Benzina e Diesel<br/>
+            🚗 Autolavaggio Automatico<br/>
+            📦 Deposito e Ritiro Pacchi<br/>
+            📱 Ricariche Telefoniche<br/>
+            🎰 Lotto e Superenalotto<br/>
+            ⚡ Carte Pokemon TCG<br/>
+            🍬 Dolci Americani e Asiatici<br/>
+            💳 Pagamenti e Bollettini</p>
+        </div>
+        <div class="col">
+            <h3 class="normal-text tw">Orari & Contatti</h3>
+            <p><strong>Orari Distributore:</strong><br/>
+            Lun - Dom: 6:00 - 22:00<br/><br/>
+            <strong>Orari Tabaccheria:</strong><br/>
+            Lun - Sab: 7:00 - 20:00<br/>
+            Domenica: 8:00 - 13:00<br/><br/>
+            📍 <strong>Indirizzo:</strong> [Inserisci via]<br/>
+            📞 <strong>Tel:</strong> [Inserisci numero]<br/>
+            ✉️ <strong>Email:</strong> info@santucci.it</p>
+        </div>
+        <div class="col">
+            <h3 class="normal-text tw">Resta Connesso</h3>
+            <p>Seguici sui social per rimanere aggiornato su promozioni, nuovi prodotti e servizi esclusivi!</p>
+            <div class="social-links">
+                <a href="#" class="social-link">📱 Facebook</a>
+                <a href="#" class="social-link">📸 Instagram</a>
+                <a href="#" class="social-link">💬 WhatsApp Business</a>
+            </div>
+            <div class="newsletter">
+                <h4 class="tw">Newsletter</h4>
+                <p style="font-size: 13px;">Iscriviti per ricevere offerte esclusive!</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p class="tw">© 2026 Tabaccheria Santucci - P.IVA: [Inserisci P.IVA] - Tutti i diritti riservati | Privacy Policy | Cookie Policy</p>
+    </div>
 </footer>
 
 
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-<script>
-    $(document).ready(function(){
-        $(".hamburger").on('click', function(){
-            $(".menu").toggleClass("menu--open");
-        });
-    });
-
-    ScrollReveal().reveal('.reveal', { distance: '80px', duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)',interval: 600});
-    ScrollReveal().reveal('.zoom', { duration: 1500, easing: 'cubic-bezier(.215, .61, .355, 1)',interval: 200, scale: 0.65, mobile: false });
-</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/flickity/3.0.0/flickity.pkgd.min.js" integrity="sha512-achKCfKcYJg0u0J7UDJZbtrffUwtTLQMFSn28bDJ1Xl9DWkl/6VDT3LMfVTo09V51hmnjrrOTbtg4rEgg0QArA==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+<script src="script.js" defer></script>
 </body>
 
 </html>
